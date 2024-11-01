@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <form class="search-form" id="search-form-id">
+                <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-form-input-id">
+                <input type="submit" value="Search" class="search-form-submit">
+            </form>
+        </header>
+        <main>
+        <div class="main-data">
+            <div>
+                <h1 class="main-heading" id="city"></h1>
+                <p class="main-details">
+                    <span id="time"></span>,
+                     <span id="description"></span>
+                <br />
+                    Humidity: <strong id="humidity"></strong>, Wind: <strong id="windspeed"></strong> 
+                </p>
+            </div>
+            <div class="main-site-container">
+                <div id="main-icon"></div> 
+                <div class="main-site-temp" id="temperature"></div>
+                <div class="main-site-unit">°C</div>
+            </div>
+        </div>
+        </main>
+        <footer>
+            This project was coded by
+            <a href="https://github.com/Iqra-4" target="_blank">Iqra Khan</a>, is 
+            <a href="https://github.com/Iqra-4/Weather-site" target="_blank">open-sourced on GitHub</a> and 
+            <a href="https://mosamiyat.netlify.app/" target="_blank">hosted on Netlify</a>
+    </footer>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
